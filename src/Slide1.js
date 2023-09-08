@@ -14,7 +14,7 @@ const Slide1 = (props) => {
         <Text style={{maxWidth: '70%', marginTop: 10, marginLeft:'auto', marginRight:'auto', textAlign: 'center', lineHeight: 20}}>Create a unique emotional story that describes better than words</Text>
       </View>
       <View style={{paddingHorizontal: 20, marginTop: 20}}>
-      <Btn textColor="white" bgColor="#756ef3" btnLabel="Get Started" Press={() => props.navigation.navigate('Login')} />
+      <Btn textColor="white" bgColor="#756ef3" btnLabel="Get Started" Press={() => props.navigation.navigate('Onboarding')} />
       </View>
       </View>
     </View>
