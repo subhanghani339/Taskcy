@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, Dimensions, TouchableOpacity, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const { width } = Dimensions.get('window');
 
@@ -81,9 +82,12 @@ const Onboarding = (props) => {
           />
         ))}
       </View>
-      <View>
+      <View style={{display:'flex', flexDirection: 'row', justifyContent:'space-between', paddingHorizontal: 20, paddingVertical: 50}}>
       <TouchableOpacity onPress={() => props.navigation.navigate('Login')}>
-        <Text style={{paddingLeft: 20, paddingTop: 20 ,marginVertical: 30, fontSize: 20}} >Skip</Text>
+        <Text style={{fontSize: 20}} >Skip</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Login')}>
+        <Icon name="arrow-forward" size={30} color="black" />
       </TouchableOpacity>
       </View>
     </View>
